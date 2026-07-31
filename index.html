@@ -1,47 +1,23 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Random Tarot Reader</title>
+        <link rel="stylesheet" href="./tarot.css">
+    </head>
 <body>
 <h1>Tarot</h1>
 
-<button onclick="randomMajorArcana()">Get Random Major Arcana</button>
+<div id="tarotBox">
+    <button onclick="randomMajorArcana()">Get Random Card</button><br/>
 
-<p id="name"></p>
+    <img src="" id="cardImage">
+    <h2 id="name"></h2>
+    <p id="meaning"></p>
+</div>
 
-<p id="meaning"></p>
+<!--<div id="card"></div>-->
 
-<script>
-
-
-async function loadCards() {
-  const response = await fetch("./tarotCollection.json");
-  majorArcana = await response.json();
-}
-loadCards();
-
-let majorArcana = []; 
-
-function randomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) ) + min;
-}
-
-function randomMajorArcana(text) {
-  const arcanaNumber = randomNumber(0, 21);
-  const card = majorArcana[arcanaNumber];
-
-  document.getElementById("name").innerHTML = majorArcana[arcanaNumber].Name;
-  document.getElementById("meaning").innerHTML = majorArcana[arcanaNumber].Upright;
-
-  // testingText(majorArcana[arcanaNumber].Name);
-  // testingText(majorArcana[arcanaNumber].Upright);
-
-}
-
-//loadCards();
-// Function to display any text
-//function testingText(text) {
-//  document.getElementById("testDemo").innerHTML += text + "<br>";
-//}
-</script>
+<script src="./oldrandomizer.js"> </script>
 
 </body>
 </html>

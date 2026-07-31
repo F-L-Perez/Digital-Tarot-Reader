@@ -1,0 +1,54 @@
+body{
+    background-color: #2c2f33;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1em;
+}
+
+h1{
+ color: #e2e2e2;
+ font-family: Arial, Helvetica, sans-serif;
+ text-align: center;
+}
+
+#tarotBox{
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 1em;
+    margin: 1.5em auto;
+    padding: 0.8em;
+    max-width: 200px;
+}
+
+#tarotBox button, #tarotBox h2, #tarotBox p, #tarotBox img#cardImage{
+    margin: auto;
+}
+
+#tarotBox h2{
+    padding-top: 0.15em;
+    padding-bottom: 0.8em;
+}
+
+img#cardImage {
+    width: 200px;
+}
+
+#tarotBox button{
+    color: #e2e2e2;
+    padding: 0.5em;
+    font-size: 1em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(38, 38, 38);
+    border: transparent;
+    border-radius: 1em 1em 0 0;
+    width: 200px;
+}
+
+#tarotBox button:hover{
+    background-color: #2d5b94;
+    transition-duration: 50ms;
+}
+
+#tarotBox button:active{
+    background-color: #3e79a0;
+    transition-duration: 50ms;
+}
