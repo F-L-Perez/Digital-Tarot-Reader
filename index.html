@@ -2,11 +2,25 @@
 <html>
     <head>
         <title>Random Tarot Reader</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
         <link rel="stylesheet" href="./tarot.css">
     </head>
 <body>
 <h1>Tarot</h1>
 
+<!-- Collapsible spoiler for settings the user can change-->
+<details id="settings">
+    <summary>Settings</summary>
+    <div id="settingsContent">
+        <p>
+            <input type="checkbox" id="loadMinorArcana" onchange="toggleMinorArcana()" unchecked>
+            <label for="loadMinorArcana">Include Minor Arcana</label>
+        </p>
+    
+    </div>
+</details>
+  
 <div id="tarotBox">
     <button onclick="randomMajorArcana()">Get Random Card</button><br/>
 
@@ -15,9 +29,14 @@
     <p id="meaning"></p>
 </div>
 
-<!--<div id="card"></div>-->
+<br />
+<footer>
+    <small id="credit"><a href="https://www.flaticon.com/free-icons/tarot" title="tarot icons">Tarot icon used in favicon, created by Heykiyou - Flaticon</a></small>
+</footer>
 
-<script src="./oldrandomizer.js"> </script>
+<!--<div id="card"></div>-->
+<script src="./loadTheCards.js"></script>
+<script src="./cardRandomizer.js"> </script>
 
 </body>
 </html>
