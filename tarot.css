@@ -1,3 +1,8 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body{
     background-color: #2c2f33;
     color: aliceblue;
@@ -11,12 +16,36 @@ h1{
  text-align: center;
 }
 
-#tarotBox{
+#tarotBox, #settings{
     background-color: rgba(255, 255, 255, 0.03);
     border-radius: 1em;
     margin: 1.5em auto;
     padding: 0.8em;
     max-width: 200px;
+    cursor: pointer;
+    border: 2px transparent solid;
+}
+
+#settingsContent {
+    padding-top: 0.8em;
+}
+
+#settings summary::marker {
+    content: "⚙️";
+}
+
+#settings summary{
+    padding-left: 0.5em;
+    font-size: 1.1em;    
+}
+
+#settings:hover{
+    border: 2px #3c89e8 solid;
+    transition-duration: 45ms;
+}
+
+#settings:hover summary{
+    color: #3c89e8;
 }
 
 #tarotBox button, #tarotBox h2, #tarotBox p, #tarotBox img#cardImage{
@@ -30,6 +59,7 @@ h1{
 
 img#cardImage {
     width: 200px;
+    transition-duration: 100ms;
 }
 
 #tarotBox button{
@@ -52,3 +82,20 @@ img#cardImage {
     background-color: #3e79a0;
     transition-duration: 50ms;
 }
+
+footer{
+    width: 100%;
+    align-content: center;
+}
+
+#credit{
+    margin: auto;
+}
+
+#credit a{
+    color:#8b8b8b;
+    text-align: center;
+    font-size: 0.75em;
+    flex-shrink: 0;
+}
+
