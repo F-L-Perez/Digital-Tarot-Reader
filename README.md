@@ -5,6 +5,8 @@
 
 Uses: (Vanilla) HTML5 and JavaScript.
 
+## Development Path
+
 ✅Beta: 
 - [x] Randomize Major and Minor Arcana
 - [x] Reverse card function
@@ -22,3 +24,6 @@ Release:
 - [ ] More animation
 - [ ] Add different languages
 - [ ] (More) Different spreads
+
+## Demonstration
+[Check the live version of "Digital Tarot Reader" Beta](https://f-l-perez.github.io/Digital-Tarot-Reader/)
